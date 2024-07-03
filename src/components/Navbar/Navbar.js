@@ -10,16 +10,26 @@ const Navbar = () => {
         <div className="right"></div>
       </div>
       <div className="nav-background">
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/connect">Connect</a></li>
-            <li><a href="/learnact">Learn & Act</a></li>
-            <li><a href="/stories">Narratives</a></li>
-          </ul>
+        <nav className="navbar">
+          <div className="navbar-container">
+           
+            <ul className="nav-menu">
+              <li className="nav-item">
+                <a href="/" className="nav-links">Home</a>
+              </li>
+              <li className="nav-item">
+                <a href="/connect" className="nav-links">Connect</a>
+              </li>
+              <li className="nav-item">
+                <a href="/learnact" className="nav-links">Learn & Act</a>
+              </li>
+              <li className="nav-item">
+                <a href="/stories" className="nav-links">Narratives</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <div className="triangle-content">
-          <h1>Home</h1>
           <img src={logo} alt="Logo" className="logo" />
         </div>
       </div>
