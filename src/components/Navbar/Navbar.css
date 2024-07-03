@@ -6,10 +6,6 @@ body {
   font-family: 'Judson', serif;
 }
 
-.header {
-  position: relative;
-  font-size: 20px;
-}
 
 .triangle-background {
   width: 100%;
@@ -88,7 +84,7 @@ nav ul li a {
   color: white;
   height: 250px;
   font-family: 'Judson', serif;
-  font-size: 25px;
+  font-size: 20px;
   justify-content: center;
 }
 

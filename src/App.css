@@ -101,3 +101,12 @@
   border-bottom: 1px solid #ccc;
   padding: 1rem 0;
 }
+/* App.css or main CSS file */
+
+body {
+  background-color: #F8F8F8;
+  font-family: 'Judson', serif; /* Ensure the font is applied globally */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
