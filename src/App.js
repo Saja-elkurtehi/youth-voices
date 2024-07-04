@@ -6,6 +6,7 @@ import StoriesPage from './pages/StoriesPage/StoriesPage';
 import ConnectPage from './pages/ConnectPage/ConnectPage';
 import LearnActPage from './pages/LearnActPage/LearnActPage';
 import './App.css';
+import VirtualCampaignBuilder from './pages/VirtualCampaignBuilder/VirtualCampaignBuilder';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/stories" element={<StoriesPage />} />
         <Route path="/connect" element={<ConnectPage />} />
         <Route path="/learnact" element={<LearnActPage />} />
+        <Route path="/campaign" element={<VirtualCampaignBuilder />} />
+
       </Routes>
     </Router>
   );

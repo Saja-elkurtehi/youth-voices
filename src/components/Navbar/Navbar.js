@@ -14,6 +14,8 @@ function NavScrollExample() {
             <Nav.Link href="/connect" className="text-white">Connect</Nav.Link>
             <Nav.Link href="/learnact" className="text-white">Learn & Act</Nav.Link>
             <Nav.Link href="/stories" className="text-white">Narratives</Nav.Link>
+            <Nav.Link href="/campaign" className="text-white">Campaign</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
         <Navbar.Brand href="/" className="mx-auto text-white navbar-center">
