@@ -1,23 +1,65 @@
-.feed {
+.story-feed .story-card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  .story-feed .story-card-header {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #fff;
-    padding: 2rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 1rem;
   }
   
-  .feed div {
-    border-bottom: 1px solid #ccc;
-    padding: 1rem 0;
-    width: 100%;
+  .story-feed .author-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
   }
   
-  .feed img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
+  .story-feed .card-body {
+    padding: 1rem;
+  }
+  
+  .story-feed .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .story-feed .card-subtitle {
+    color: #a2cfb3; /* Use theme color */
+  }
+  
+  .story-feed .read-more {
+    color: #28a745; /* Green color for the link */
+    text-decoration: none;
+  }
+  
+  .story-feed .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  .story-feed .story-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .story-feed .action-button {
+    margin-right: 0.5rem;
+  }
+  
+  .story-feed .action-button:last-child {
+    margin-right: 0;
+  }
+  
+  .story-feed .btn-outline-secondary {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  
+  .story-feed .btn-outline-secondary:hover {
+    background-color: #c49494;
+    color: #ffffff;
   }
   

@@ -1,213 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Judson:wght@400;700&display=swap');
-
-/* General Styles */
-body {
-  font-family: 'Judson', serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Triangle Background Styles */
-.triangle-background {
-  width: 100%;
-  height: 0;
-  padding-bottom: 25%;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  z-index: 1;
-}
-
-.triangle-background .left,
-.triangle-background .right {
-  width: 50%;
-  height: 95%;
-  position: absolute;
-  top: 0;
-}
-
-.triangle-background .left {
-  background-color: #A2CFB3;
-  left: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 55%, 0 100%);
-}
-
-.triangle-background .right {
-  background-color: #D29FA1;
-  right: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 55%);
-}
-
-/* Navbar Styles */
-.nav-background {
-  width: 100%;
-  height: 0px;
-  padding-bottom: 25%;
-  background: #000;
-  position: relative;
-  overflow: hidden;
-  clip-path: polygon(0 0, 100% 0, 50% 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
-
-nav.navbar {
-  background: #000;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  border-top: 1px solid #fff; /* Add a border to the top */
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  max-width: 1500px;
-  padding-top: inherit;
-}
-
-.navbar-logo {
-  color: #fff;
-  justify-self: start;
-  margin-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-}
-
-.nav-menu {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
-  list-style: none;
-  text-align: center;
-  width: 60vw;
-  justify-content: center;
-  margin-right: 2rem;
-}
-
-.nav-item {
-  height: 80px;
-}
-
-.nav-links {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
-}
-
-.nav-links:hover {
-  border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
-}
-
-/* Triangle Content Styles */
-.triangle-content {
-  position: absolute;
-  bottom: 40px; /* Adjust the position as needed */
-  text-align: center;
-  color: white;
-  width: 100%; /* Adjust to be centered */
-}
-
-.page-title {
-  font-family: 'Judson', serif;
-  font-size: 20px;
-  margin-bottom: 20px; /* Add some margin below the title */
-}
-
-.logo {
-  width: 100px; /* Adjust the size as needed */
-  max-width: 20%; /* Make the size responsive */
-  margin-bottom: 20px; /* Adjust the margin to position the logo */
-}
-
-@media screen and (max-width: 960px) {
-  .navbar-container {
-    justify-content: space-between;
-  }
-  .navbar-logo {
-    margin-left: 10px;
-  }
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 90vh;
-    position: absolute;
-    top: 80px;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-  .nav-menu.active {
-    background: #242222;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-  .nav-links {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  }
-  .nav-links:hover {
-    background-color: #fff;
-    color: #242424;
-    border-radius: 0;
-  }
-  .navbar-logo {
-    position: absolute;
+.navbar {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
     top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
-  }
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-  .fa-times {
-    color: #fff;
-    font-size: 2rem;
-  }
-  .nav-links-mobile {
-    display: block;
-    text-align: center;
-    margin: 2rem auto;
-    border-radius: 4px;
-    width: 80%;
-    text-decoration: none;
-    font-size: 1.5rem;
-    background-color: transparent;
-    color: #fff;
-    padding: 14px 20px;
-    border: 1px solid #fff;
-    transition: all 0.3s ease-out;
-  }
-  .nav-links-mobile:hover {
-    background: #fff;
-    color: #242424;
-    transition: 250ms;
-  }
+    z-index: 1020; /* Ensure it stays on top */
+    background-color: black; /* Ensure background color covers entire navbar */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    width: 100%; /* Ensure it spans the full width */
 }
+
+  
+  .logo {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .navbar .nav-link, .navbar .navbar-brand, .navbar .dropdown-toggle {
+    color: white !important;
+  }
+  
+  .navbar .nav-link:hover, .navbar .navbar-brand:hover, .navbar .dropdown-toggle:hover {
+    color: #A2CFB3 !important; /* Adjust hover color as needed */
+  }  

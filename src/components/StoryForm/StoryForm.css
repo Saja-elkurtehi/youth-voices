@@ -1,47 +1,24 @@
-/* StoryForm.css */
-
-.form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #fff;
-    padding: 2rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 50%; /* Adjusts the form to take up half the page */
-    margin-left: 50px; /* Adds a margin on the left side */
+.story-form-container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px; /* Adjust the width as needed */
+    background-color: #f9f9f9; /* Optional: add a background color for better visibility */
+    border: 1px solid #ddd; /* Optional: add a border */
+    border-radius: 10px; /* Optional: round the corners */
   }
   
-  .form-container label {
-    color: grey; /* Text color for the form */
-    margin-bottom: 0.5rem;
+  .story-form-container h2 {
+    color: #A2CFB3;
   }
   
-  .form-container input,
-  .form-container select,
-  .form-container textarea {
+  .story-form-container .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .story-form-container .submit-button {
+    background-color: #A2CFB3;
+    border-color: #A2CFB3;
     width: 100%;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .form-container input[type="file"] {
-    margin-bottom: 1rem;
-  }
-  
-  .form-container button {
-    padding: 0.5rem 1rem;
-    background-color: #A2CFB3; /* Green color for the submit button */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .form-container button:hover {
-    background-color: #85b09e; /* Slightly darker green on hover */
+    margin-top: 10px; /* Add some margin to the top of the button */
   }
   

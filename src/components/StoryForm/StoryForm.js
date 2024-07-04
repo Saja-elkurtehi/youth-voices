@@ -1,41 +1,67 @@
 import React from 'react';
-import './StoryForm.css';
+import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import './StoryForm.css'; // Assuming you create a CSS file for additional styles
 
 const StoryForm = () => {
   return (
-    <div className="form-container">
-      <label htmlFor="name">Your Name (Optional)</label>
-      <input type="text" id="name" name="name" placeholder="Your Name" />
+    <Container className="story-form-container">
+      <Row>
+        <Col md={12}>
+          <h2 className="text-center mb-4" style={{ color: '#A2CFB3' }}>Share Your Story</h2>
+          <Form>
+            <Form.Group controlId="formName" className="mb-3">
+              <Form.Label>Your Name (optional)</Form.Label>
+              <Form.Control type="text" placeholder="Enter your name" />
+            </Form.Group>
 
-      <label htmlFor="location">Location</label>
-      <input type="text" id="location" name="location" placeholder="Location" />
+            <Form.Group controlId="formLocation" className="mb-3">
+              <Form.Label>Location</Form.Label>
+              <Form.Control type="text" placeholder="Enter your location" />
+            </Form.Group>
 
-      <label htmlFor="email">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="Email Address" />
+            <Form.Group controlId="formEmail" className="mb-3">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter your email" />
+            </Form.Group>
 
-      <label htmlFor="phone">Contact Phone</label>
-      <input type="tel" id="phone" name="phone" placeholder="Contact Phone" />
+            <Form.Group controlId="formPhone" className="mb-3">
+              <Form.Label>Contact Phone</Form.Label>
+              <Form.Control type="tel" placeholder="Enter your phone number" />
+            </Form.Group>
 
-      <label htmlFor="tags">Tags</label>
-      <select id="tags" name="tags">
-        <option value="personal">Personal</option>
-        <option value="work">Work</option>
-        <option value="family">Family</option>
-        <option value="travel">Travel</option>
-      </select>
+            <Form.Group controlId="formTags" className="mb-3">
+              <Form.Label>Tags</Form.Label>
+              <Form.Control as="select">
+                <option>Choose...</option>
+                <option>Tag 1</option>
+                <option>Tag 2</option>
+                <option>Tag 3</option>
+              </Form.Control>
+            </Form.Group>
 
-      <label htmlFor="title">Story Title</label>
-      <input type="text" id="title" name="title" placeholder="Story Title" />
+            <Form.Group controlId="formStoryTitle" className="mb-3">
+              <Form.Label>Story Title</Form.Label>
+              <Form.Control type="text" placeholder="Enter the title of your story" />
+            </Form.Group>
 
-      <label htmlFor="story">Your Story</label>
-      <textarea id="story" name="story" placeholder="Write your story here..."></textarea>
+            <Form.Group controlId="formStory" className="mb-3">
+              <Form.Label>Write Your Story</Form.Label>
+              <Form.Control as="textarea" rows={5} placeholder="Write your story here..." />
+            </Form.Group>
 
-      <label htmlFor="media">Upload Video/Photo</label>
-      <input type="file" id="media" name="media" />
+            <Form.Group controlId="formFile" className="mb-3">
+              <Form.Label>Upload Picture/Video</Form.Label>
+              <Form.Control type="file" />
+            </Form.Group>
 
-      <button type="submit">Submit</button>
-    </div>
+            <Button variant="primary" type="submit" className="submit-button">
+              Submit
+            </Button>
+          </Form>
+        </Col>
+      </Row>
+    </Container>
   );
-};
+}
 
 export default StoryForm;

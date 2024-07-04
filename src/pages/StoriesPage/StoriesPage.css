@@ -1,34 +1,24 @@
-/* StoriesPage.css */
-
 .stories-page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-  }
-  
-  .header {
-    font-family: 'Judson', serif;
-    color: #333;
-    margin-bottom: 1rem;
-    font-size: 2.5rem; /* Increase the size of the header */
-    position: relative;
-    text-align: center;
-  }
-  
-  .header::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: #333;
-    margin: 10px auto 0; /* Space between the header and the line */
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
   
   .content {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: 1200px;
+    margin-top: 20px; /* Adjust spacing as needed */
+    padding: 0 2rem; /* Add padding inside the content */
+  }
+  
+  .story-form-section {
+    flex: 1;
+    margin-right: 20px;
   }
   
   .tips {

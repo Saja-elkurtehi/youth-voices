@@ -1,40 +1,28 @@
 import React from 'react';
 import './Navbar.css';
-import logo from '../../assets/logo.png'; // Add the path to your logo
+import logo from '../../assets/logo.png'; // Adjust the path to your logo
+import { Navbar, Container, Nav } from 'react-bootstrap';
 
-const Navbar = () => {
+function NavScrollExample() {
   return (
-    <header className="header">
-      <div className="triangle-background">
-        <div className="left"></div>
-        <div className="right"></div>
-      </div>
-      <div className="nav-background">
-        <nav className="navbar">
-          <div className="navbar-container">
-           
-            <ul className="nav-menu">
-              <li className="nav-item">
-                <a href="/" className="nav-links">Home</a>
-              </li>
-              <li className="nav-item">
-                <a href="/connect" className="nav-links">Connect</a>
-              </li>
-              <li className="nav-item">
-                <a href="/learnact" className="nav-links">Learn & Act</a>
-              </li>
-              <li className="nav-item">
-                <a href="/stories" className="nav-links">Narratives</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div className="triangle-content">
+    <Navbar expand="lg" className="bg-black">
+      <Container fluid>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav className="me-auto my-2 my-lg-0" navbarScroll>
+            <Nav.Link href="/" className="text-white">Home</Nav.Link>
+            <Nav.Link href="/connect" className="text-white">Connect</Nav.Link>
+            <Nav.Link href="/learnact" className="text-white">Learn & Act</Nav.Link>
+            <Nav.Link href="/stories" className="text-white">Narratives</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+        <Navbar.Brand href="/" className="mx-auto text-white navbar-center">
           <img src={logo} alt="Logo" className="logo" />
-        </div>
-      </div>
-    </header>
+          Youth Voices
+        </Navbar.Brand>
+      </Container>
+    </Navbar>
   );
-};
+}
 
-export default Navbar;
+export default NavScrollExample;

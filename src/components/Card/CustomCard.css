@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson:wght@400;700&display=swap');
+
+.custom-card {
+  font-family: 'Judson', serif;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  width: 18rem; /* Standard card width */
+  height: 24rem; /* Fixed card height */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.read-more {
+  color: #A2CFB3; /* Adjust to the green color you've been using */
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}

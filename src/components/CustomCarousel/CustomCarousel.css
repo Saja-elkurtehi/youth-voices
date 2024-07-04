@@ -1,0 +1,42 @@
+.custom-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Change this to center the content */
+    width: 100%;
+    padding: 0 2rem; /* Add padding to push buttons away from edges */
+  }
+  
+  .custom-carousel .card-row {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 1rem; /* Add some space between cards */
+  }
+  
+  .custom-carousel .col {
+    flex: 0 0 auto;
+    max-width: 18rem; /* Ensure each card has a fixed width */
+  }
+  
+  .carousel-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 0; 
+    height: 0;
+    border-style: solid;
+    z-index: 1; /* Ensure buttons are above cards */
+  }
+  
+  .left-arrow {
+    border-width: 15px 20px 15px 0;
+    border-color: transparent #D29FA1 transparent transparent; /* Red color for the left arrow */
+    margin-right: -1.5rem; /* Negative margin to move button closer to cards */
+  }
+  
+  .right-arrow {
+    border-width: 15px 0 15px 20px;
+    border-color: transparent transparent transparent #D29FA1; /* Red color for the right arrow */
+    margin-left: -1.5rem; /* Negative margin to move button closer to cards */
+  }
+  

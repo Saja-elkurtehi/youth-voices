@@ -1,0 +1,23 @@
+.comment-section {
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+  }
+  
+  .story-feed .card {
+    margin-bottom: 1rem;
+  }
+  
+  .comment-section h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .comment-section .list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .comment-section .form-control {
+    margin-bottom: 0.5rem;
+  }
+  
