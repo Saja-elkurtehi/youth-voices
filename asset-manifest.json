@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/youth-voices/static/css/main.a5461d2a.css",
+    "main.js": "/youth-voices/static/js/main.d7195f63.js",
+    "static/media/story2.jpg": "/youth-voices/static/media/story2.75470afcd38008f9a540.jpg",
+    "static/media/story1.jpg": "/youth-voices/static/media/story1.2929ce491920e588edc1.jpg",
+    "static/media/logo.png": "/youth-voices/static/media/logo.bd0647c51bc81b11f22a.png",
+    "static/media/info3.jpg": "/youth-voices/static/media/info3.bf8eb6ddfc01aae6e676.jpg",
+    "static/media/climate_change_infographic.jpg": "/youth-voices/static/media/climate_change_infographic.acadd877b5ed5a90efb1.jpg",
+    "static/media/green.jpg": "/youth-voices/static/media/green.a3066532300bae058180.jpg",
+    "static/media/info2.jpg": "/youth-voices/static/media/info2.4af2f41a1048c255ef06.jpg",
+    "static/media/info4.jpg": "/youth-voices/static/media/info4.aac4b66db88eb7d6d7e7.jpg",
+    "static/media/social_justice_infographic.jpg": "/youth-voices/static/media/social_justice_infographic.edc27f08fefd6ba6d8b5.jpg",
+    "static/media/red.jpg": "/youth-voices/static/media/red.0af995c0c3e5d635fc89.jpg",
+    "static/media/cardImage6.jpg": "/youth-voices/static/media/cardImage6.ab64d3ec019afbf10349.jpg",
+    "static/media/cardImage5.jpg": "/youth-voices/static/media/cardImage5.9aa151d84310f5144bd7.jpg",
+    "static/media/cardImage4.jpg": "/youth-voices/static/media/cardImage4.f209d555a8fa4b242097.jpg",
+    "static/media/cardImage3.jpg": "/youth-voices/static/media/cardImage3.e0f11948c07c15a6eba1.jpg",
+    "static/media/cardImage1.jpg": "/youth-voices/static/media/cardImage1.14360539df06991ff79e.jpg",
+    "static/media/cardImage2.jpg": "/youth-voices/static/media/cardImage2.220ee36322b7ee1fcb2c.jpg",
+    "static/media/about-us.jpg": "/youth-voices/static/media/about-us.e79862f7a5227db20f49.jpg",
+    "index.html": "/youth-voices/index.html",
+    "main.a5461d2a.css.map": "/youth-voices/static/css/main.a5461d2a.css.map",
+    "main.d7195f63.js.map": "/youth-voices/static/js/main.d7195f63.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5461d2a.css",
+    "static/js/main.d7195f63.js"
+  ]
+}
