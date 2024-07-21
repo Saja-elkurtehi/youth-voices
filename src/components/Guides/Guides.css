@@ -1,0 +1,36 @@
+.guides-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .guide-item {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .guide-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .guide-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .guide-item a {
+    color: #A2CFB3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .guide-item a:hover {
+    text-decoration: underline;
+  }
+  

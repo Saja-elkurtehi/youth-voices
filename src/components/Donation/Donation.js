@@ -63,7 +63,7 @@ const charities = [
 const Donation = () => {
   return (
     <div className="donation-section">
-      <h2 className="section-title">Donate Now</h2>
+      <h2 className="section-title"style={{ color: 'black' }}>Donate Now</h2>
       <div className="donation-grid">
         {charities.map((charity, index) => (
           <div className="donation-card" key={index}>

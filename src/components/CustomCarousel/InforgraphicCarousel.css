@@ -1,0 +1,62 @@
+.infographic-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  
+  .infographic-carousel .card-row {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .infographic-carousel .col {
+    flex: 0 0 auto;
+    max-width: 25rem; /* Ensure each card has a fixed larger width */
+  }
+  
+  .carousel-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: 1;
+  }
+  
+  .left-arrow {
+    border-width: 15px 20px 15px 0;
+    border-color: transparent #D29FA1 transparent transparent;
+    margin-right: -1.5rem;
+  }
+  
+  .right-arrow {
+    border-width: 15px 0 15px 20px;
+    border-color: transparent transparent transparent #D29FA1;
+    margin-left: -1.5rem;
+  }
+  
+  .infographic-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #A2CFB3;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%; /* Ensure cards are responsive and fill the column */
+  }
+  
+  .infographic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .infographic-card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  

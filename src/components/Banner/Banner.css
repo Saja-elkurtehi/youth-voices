@@ -144,15 +144,18 @@ body {
     display: flex;
   }
   
-  .left-background {
+ .left-background {
     flex: 1;
     background-color: #A2CFB3;
-  }
-  
-  .right-background {
+    clip-path: polygon(0 100%, 0 0, 100% 30%, 100% 80%);
+}
+
+.right-background {
     flex: 1;
     background-color: #C49494;
-  }
+    clip-path: polygon(0 30%, 0 80%, 100% 100%, 100% 0);
+}
+
   
 
   

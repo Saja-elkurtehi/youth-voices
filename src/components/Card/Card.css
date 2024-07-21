@@ -1,0 +1,36 @@
+.custom-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #A2CFB3;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .custom-card-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .custom-card:hover .custom-card-overlay {
+    opacity: 1;
+  }
+  

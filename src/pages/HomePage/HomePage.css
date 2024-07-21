@@ -1,84 +1,128 @@
+body {
+  font-family: 'Arial, sans-serif';
+  background-color: #f9f9f9;
+  color: #333;
+}
+
 .section {
-    text-align: center;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #444;
-    text-transform: uppercase;
-  }
-  
-  .centered-title {
-    text-align: center;
-  }
-  
-  .about-us h5 {
-    font-size: 1.2rem;
-    color: #444;
-    margin-bottom: 0.5rem;
-  }
-  
-  .about-us h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #444;
-    text-transform: uppercase;
-  }
-  
-  .about-us p {
-    color: #555;
-    margin-bottom: 1rem;
-  }
-  
-  .about-us-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about-us {
-    padding: 2rem;
-    background-color: #fff;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .faq {
-    padding: 2rem;
-    background-color: #fff;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .faq .section-title {
-    margin-bottom: 1rem;
-  }
-  
-  .faq .faq-subtitle {
-    color: #555;
-    margin-bottom: 1.5rem;
-  }
-  
-  .faq-item {
-    text-align: left;
-    margin-top: 1rem;
-    padding-left: 1rem;
-    border-left: 3px solid #c49494;
-  }
-  
-  .faq-item h5 {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .faq-item p {
-    margin-bottom: 1rem;
-    color: #555;
-  }
-  
+  flex: 1;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-centered {
+  min-height: 80vh; /* Ensure sections take up at least 80% of viewport height */
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-item {
+  margin-bottom: 20px;
+}
+
+.filter {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff; /* Add a white background */
+  transition: border-color 0.3s;
+}
+
+.filter select:focus {
+  border-color: #A2CFB3; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.centered-title {
+  text-align: center;
+}
+
+.about-us h5 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.about-us p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.about-us-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us {
+  padding: 2rem;
+  background-color: #fff;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq {
+  padding: 2rem;
+  background-color: #fff;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq .section-title {
+  margin-bottom: 1rem;
+}
+
+.faq .faq-subtitle {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  text-align: left;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid #A2CFB3;
+}
+
+.faq-item h5 {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.faq-item p {
+  margin-bottom: 1rem;
+  color: #555;
+}
